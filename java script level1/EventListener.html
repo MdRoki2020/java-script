@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+	    <title>AddEventListener</title>
+	    
+		<style>
+		
+		
+		.addCss{
+		
+		color:red;
+		font-size:40px;
+		transition:1s;
+		}
+		
+		
+		</style>
+	</head>
+	    <body>
+	
+	
+	    <h3 id="addStyle">put your mouch here</h3>
+		
+	
+	    <script>
+		
+		var my_var=document.querySelector("#addStyle");
+		my_var.addEventListener("mouseover",function(){
+		my_var.classList.add("addCss");
+		});
+		
+		var my_var=document.querySelector("#addStyle");
+		my_var.addEventListener("mouseout",function(){
+		my_var.classList.remove("addCss");
+		});
+		
+		</script>
+	    </body>
+</html>

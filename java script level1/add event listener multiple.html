@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+	    <title>add event listener</title>
+	
+	</head>
+	<body>
+	
+	    <h3 id="headingStyle">click any button and saw that which button click you are !!</h3>
+		<button id="btnStyle">button1</button>
+		<button id="btnStyle">button2</button>
+		<button id="btnStyle">button3</button>
+		
+		
+		<script>
+		
+		    for(var i=0;i<3;i++){
+			document.querySelectorAll("#btnStyle")[i].addEventListener("click",function(){
+			var text=this.innerHTML;
+			document.querySelector("#headingStyle").innerHTML=text+"is clicked";
+			});
+			}
+		
+		</script>
+	
+	</body>
+
+</html>

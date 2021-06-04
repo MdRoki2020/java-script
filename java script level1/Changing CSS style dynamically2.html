@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+        <title>Changing CSS style dynamically</title>
+		
+		<style>
+		
+		.getStyle {
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        width: 548px;
+        border: 1px solid pink;
+        box-shadow: -5px 5px 36px -7px #52e4c9d1;
+        margin: auto;
+}
+		
+		</style>
+        
+    </head>
+    <body>
+    
+        <div id="title">
+		    Changing CSS style dynamically
+		</div>
+        <button onclick="addStyle()">add style</button>
+        <button onclick="removeStyle()">remove style</button>
+		
+		
+		<script>
+		
+		    function addStyle(){
+			
+			document.querySelector("#title").classList.add("getStyle");
+			
+			}
+			
+			function removeStyle(){
+			
+			document.querySelector("#title").classList.remove("getStyle");
+			
+			}
+		
+		</script>
+
+        
+    </body>

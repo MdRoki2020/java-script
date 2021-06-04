@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function</title>
+    </head>
+    <body>
+
+        <script>
+
+            //create function
+
+            function Summation(a,b)
+            {
+                var c=a+b;
+                document.write("summation: "+c+"<br/>");
+            }
+
+            function Subtraction(a,b)
+            {
+                var c=a-b;
+                document.write("subtraction: "+c+"<br/>");
+            }
+
+            function Multipication(a,b)
+            {
+                var c=a*b;
+                document.write("Multipication: "+c+"<br/>");
+            }
+
+            function Divition(a,b)
+            {
+                var c=a/b;
+                document.write("Divition: "+c+"<br/>");
+            }
+
+            function Remainder(a,b)
+            {
+                var c=a%b;
+                document.write("Remainder: "+c+"<br/>");
+            }
+
+            //calling function
+
+            var a=prompt("Please Enter First Number: ");
+            var b=prompt("Please Enter Second Number: ");
+
+            a=parseInt(a,10);
+            b=parseInt(b,10);
+
+            Summation(a,b);
+            Subtraction(a,b);
+            Multipication(a,b);
+            Divition(a,b);
+            Remainder(a,b);
+
+
+
+        </script>
+
+    </body>
+</html>

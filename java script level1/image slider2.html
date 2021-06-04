@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+	    <title>image slider</title>
+	
+	</head>
+	<body>
+	
+	    <button onclick="prev()">Previous</button>
+		<img id="image" src="brazil.jpg" width="200px"/>
+	    <button onclick="next()">Next</button>
+		
+		<script>
+		
+		    var photos=["brazil.jpg","love-couple.png","compassion.jpg"];
+			var tagimg=document.getElementById("image");
+			var count=0;
+			
+			function next(){
+			
+			    count++;
+				if(count>=photos.length){
+				count=0;
+				tagimg.src=photos[count];
+				}else{
+				tagimg.src=photos[count];
+                }				
+			}
+			
+			
+			
+			function prev(){
+			
+			    count--;
+				if(count<0){
+				count=photos.length-1;
+				tagimg.src=photos[count];
+				}else{
+				tagimg.src=photos[count];
+                }				
+			}
+		
+		</script>
+	
+	</body>
+
+</html>

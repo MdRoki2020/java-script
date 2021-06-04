@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	
+	    <title>add Event Listener multiple elements</title>
+	    
+		
+		<style>
+		
+		    
+		
+		</style>
+	    </head>
+	    <body>
+	
+	
+           <h3 id="peraStyle">click any button and saw which button clicked you are !!</h3>
+           <button id="buttonStyle">button1</button>
+           <button id="buttonStyle">button2</button>
+           <button id="buttonStyle">button3</button>
+	
+	
+	    <script>
+	
+	
+	        for(var i=0;i<3;i++){
+                document.querySelectorAll("#buttonStyle")[i].addEventListener("click",function(){
+                var text=this.innerHTML;
+                document.querySelector("#peraStyle").innerHTML=text+" is clicked";
+            });
+            }
+	
+	
+	    </script>
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+	
+	    <title>Event Listener</title>
+	    
+		
+		<style>
+		
+		    .my_style{
+			color:red;
+			font-size:50px;
+			transition:1s;
+			}
+		
+		</style>
+	    </head>
+	    <body>
+	
+	
+	        <h1 id="style">Please Click Me</h1>
+	
+	
+	    <script>
+	
+	
+	        var my_var=document.querySelector("#style");
+			
+			my_var.addEventListener("mouseover",function(){
+			my_var.classList.add("my_style");
+			});
+			
+			
+			var my_var=document.querySelector("#style");
+			
+			my_var.addEventListener("mouseout",function(){
+			my_var.classList.remove("my_style");
+			});
+	
+	
+	    </script>
+	</body>
+
+</html>
