@@ -1,0 +1,44 @@
+body {
+    font-family: math;
+}
+input {
+    padding: 21px 60px;
+    margin-bottom: 18px;
+    border: none;
+    border-bottom: 1px solid fuchsia;
+    border-radius: 10px;
+}
+
+div#container {
+    display: grid;
+    grid-template-columns: 20% 20%;
+}
+
+.box1 {
+    grid-column-gap: 5em;
+}
+
+label {font-size: 17px;}
+
+input.submit {
+    padding: 21px 121px;
+}
+
+input#dob {
+    padding: 21px 86px;
+}
+input#cc {
+    padding: 30px 142px;
+    background: white;
+}
+input#datasubmit {
+    padding: 21px 270px;
+    background: fuchsia;
+    color: white;
+    margin-top: 14px;
+}
+.heading {
+    padding: 3px 0px;
+    margin-left: 226px;
+    font-size: 21px;
+}
