@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation form</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <p id="popup"></p>
+            <input id="name" type="text" placeholder="Enter Name"/><br/><br/>
+            <input id="email" type="email" placeholder="Enter Email"/><br/><br/>
+            <input id="password" type="password" placeholder="Enter Password"/><br/><br/>
+            <label>Gender:</label><br/>
+            <input type="radio" name="gender" value="male"/><label>Male</label>
+            <input type="radio" name="gender" value="female"/><label>Female</label><br/><br/>
+            <button onclick="submit()">Submit</button>
+          </div>
+
+        <script>
+            function submit(){
+
+                let name=document.getElementById('name').value;
+                let email=document.getElementById('email').value;
+                let password=document.getElementById('password').value;
+                // var gender = document.querySelector('input[name="gender"]:checked').value;
+                let popup=document.getElementById('popup');
+
+                if (name == "") {
+                alert("Please enter your name.");
+                return true;
+                }
+                else if (email == "") {
+                alert("Please enter your email.");
+                return true;
+                }
+                else if (password == "") {
+                alert("Please enter your password.");
+                return true;
+                }else{
+                popup.innerHTML="Form submitted successfully!"
+                return true;
+                }
+            }
+        </script>
+    </body>
+</html>

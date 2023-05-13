@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Money Converter</title>
+</head>
+<body>
+    <h1>Money Converter</h1>
+    <label for="amount">Enter amount:</label>
+    <input type="number" id="amount">
+    <br><br>
+    <label for="from">Convert from:</label>
+    <select id="from">
+        <option value="usd">USD</option>
+        <option value="bdt">BDT</option>
+        <option value="euro">Euro</option>
+        <option value="inr">Indian Rupee</option>
+    </select>
+    <br><br>
+    <label for="to">Convert to:</label>
+    <select id="to">
+        <option value="usd">USD</option>
+        <option value="bdt">BDT</option>
+        <option value="euro">Euro</option>
+        <option value="inr">Indian Rupee</option>
+    </select>
+    <br><br>
+    <button onclick="convert()">Convert</button>
+    <br><br>
+    <div id="result"></div>
+    
+    <script>
+        function convert() {
+            // Get the input amount and selected currencies
+            var amount = document.getElementById("amount").value;
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            
+            // Define the exchange rates
+            var usd_to_bdt = 84.28;
+            var usd_to_euro = 0.83;
+            var usd_to_inr = 74.42;
+            var bdt_to_usd = 0.012;
+            var euro_to_usd = 1.21;
+            var inr_to_usd = 0.013;
+            
+            // Perform the conversion
+            var result;
+            if (from == "usd" && to == "bdt") {
+                result = amount * usd_to_bdt;
+            } else if (from == "usd" && to == "euro") {
+                result = amount * usd_to_euro;
+            } else if (from == "usd" && to == "inr") {
+                result = amount * usd_to_inr;
+            } else if (from == "bdt" && to == "usd") {
+                result = amount * bdt_to_usd;
+            } else if (from == "euro" && to == "usd") {
+                result = amount * euro_to_usd;
+            } else if (from == "inr" && to == "usd") {
+                result = amount * inr_to_usd;
+            } else {
+                result = amount;
+            }
+            
+            // Display the result
+            document.getElementById("result").innerHTML = result;
+            // document.getElementById("result").innerHTML = amount + " " + from.toUpperCase() + " = " + result.toFixed(2) + " " + to.toUpperCase();
+        }
+    </script>
+</body>
+</html>

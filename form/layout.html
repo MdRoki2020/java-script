@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .child1{
+            flex:1;
+        }
+        .child2{
+            flex:1;
+        }
+        .child3{
+            flex:2;
+        }
+
+
+
+
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos qui, ullam voluptas aperiam necessitatibus expedita non quis deserunt ipsum asperiores cum molestias accusamus repellendus tenetur nihil est maiores quibusdam.</p>
+        </div>
+        <div class="child2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste temporibus repellendus ea esse atque assumenda laborum tempore, sunt officia distinctio ratione non unde fuga quasi saepe. Impedit architecto unde nobis.</p>
+        </div>
+        <div class="child3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eveniet minima dolorum adipisci reprehenderit in repudiandae optio dolores ipsa nostrum! Tempora fugit nobis ipsam assumenda quis tempore iusto debitis sit.</p>
+        </div>
+    </div>
+
+
+    <div class="tableSection">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Class</th>
+                <th>Section</th>
+            </tr>
+            <tr>
+                <td colspan="2">Roki</td>
+                <!-- <td>274</td> -->
+                <td>Ten</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>Usha</td>
+                <td>01</td>
+                <td rowspan="2">Eight</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Tithee</td>
+                <td>02</td>
+                <!-- <td>Nine</td> -->
+                <td>A</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
