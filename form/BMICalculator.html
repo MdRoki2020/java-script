@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #container {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    #calculate-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #result {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>BMI Calculator</h1>
+  <div id="container">
+    <div class="input-group">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" min="0" step="0.01">
+    </div>
+    <div class="input-group">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" min="0" step="0.01">
+    </div>
+    <button id="calculate-btn" onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculateBMI() {
+      var weight = document.getElementById('weight').value;
+      var height = document.getElementById('height').value / 100; // Convert height to meters
+
+      if (weight === '' || height === '') {
+        alert('Please enter your weight and height.');
+        return;
+      }
+
+      var bmi = weight / (height * height);
+      bmi = bmi.toFixed(2); // Round BMI to 2 decimal places
+
+      var result = document.getElementById('result');
+      result.innerHTML = 'Your BMI is: ' + bmi;
+    }
+  </script>
+</body>
+</html>
