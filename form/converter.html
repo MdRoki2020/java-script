@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .cm input {
+    padding: 7px 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    }
+
+    .mm input {
+        padding: 7px 8px;
+        margin-left: 11px;
+        margin-bottom: 20px;
+    }
+
+    .m input {
+        padding: 7px 7px;
+        margin-left: 24px;
+        margin-bottom: 20px;
+    }
+    .submit input {
+    padding: 7px 71px;
+    margin-left: 41px;
+    }
+
+    .wrapper {
+        width: 240px;
+        margin: auto;
+    }
+    .wrapper {
+    border: 1px solid;
+    padding: 10px 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="cm">
+            <label>Cm </label>
+            <input type="number" id="cm"/>
+        </div>
+    
+        <div class="mm">
+            <label>Mm </label>
+            <input type="number" id="mm"/>
+        </div>
+    
+        <div class="m">
+            <label>M </label>
+            <input type="number" id="m"/>
+        </div>
+    
+        <div class="submit">
+            <input type="submit" onclick="calculate()"/>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        function calculate(){
+            let cm=document.getElementById('cm').value;
+            let mm=document.getElementById('mm');
+            let m=document.getElementById('m');
+
+
+
+            mm.value=cm/100;
+            m=cm/1000;
+
+        }
+
+    </script>
+    
+</body>
+</html>
