@@ -1,0 +1,13 @@
+.container {
+    width: 600px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 150px 150px;
+}
+
+.box {
+    border: 1px solid;
+    padding: 15px 0px;
+    margin-bottom: 14px;
+}
