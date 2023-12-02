@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>image slider</title>
-    </head>
-    <body>
-
-        <button onclick="pre()">previous</button>
-        <img id="image" src="roki.jpg" width=200px/>
-        <button onclick="next()">Next</button>
-		
-		<script>
-		
-		    var photos=["roki.jpg","love-couple.png","brazil.jpg"];
-			var findimg=document.getElementById("image");
-			var count=0;
-			
-			function next(){
-			count++;
-			
-			if(count>=photos.length){
-			count=0;
-			findimg.src=photos[count];
-			}
-			else{
-			    findimg.src=photos[count];
-			}
-			}
-			
-			
-			function pre(){
-			count--;
-			
-			if(count<0){
-			count=photos.length-1;
-			findimg.src=photos[count];
-			}
-			else{
-			    findimg.src=photos[count];
-			}
-			}
-		
-		</script>
-
-        
-    </body>
+  <head>
+    <title>image slider</title>
+  </head>
+  <body>
+    
+	<button onclick="prev()">previous</button>
+	<img src="roki1.jpg" width="300px"/>
+	<button onclick="next()">next</button>
+	
+  
+  <script type="text/javascript">
+    var my_var=document.querySelector("img");
+    var photos=["roki1.jpg","roki2.jpg","roki3.jpg"];
+	var count=0;
+	
+	function next(){
+	count++;
+	if(count>=photos.length){
+	count=0;
+	my_var.src=photos[count];
+	}
+	else{
+	my_var.src=photos[count];
+	}
+	}
+	
+	
+	
+	function prev(){
+	
+	count--;
+	if(count<0){
+	count=photos.length-1;
+	my_var.src=photos[count];
+	}
+	else{
+	my_var.src=photos[count];
+	}
+	}
+    
+	
+	
+  </script>
+  </body>
 </html>
