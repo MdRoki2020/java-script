@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<button id="windowOpen">Print</button>
+	
+	
+	
+	<script type="text/javascript">
+	
+	    document.querySelector("#windowOpen").addEventListener('click',function(){
+		
+		<!--window.open("http://rsroki.info","PRINT WINDOW","height=500px,width=700px,left=350%,top=200px");-->
+		
+		var mywindow=window.open(null,"PRINT WINDOW","height=500px,width=700px,left=350%,top=200px");
+		
+		mywindow.document.write("<h1 style='text-align:center;line-height:500px'>HeLLO pRInT WorLD</h1>");
+		
+		});
+	
+	</script>
+</body>
+</html>
