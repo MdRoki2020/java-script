@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>add class remove class show menu</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+	<style type="text/css">
+	
+	button#openmenu {
+    background: #234860;
+    color: white;
+    padding: 2px 8px;
+    font-size: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    div#demo {
+    background: orange;
+    width: 300px;
+    font-family: inherit;
+    text-align: center;
+    padding: 11px 0px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #100c64;
+	display:none;
+    }
+	.showMenu{
+	display:block !important;
+	}
+	
+	</style>
+	
+</head>
+<body>
+    <button id='openmenu'><i class="fas fa-bars"></i></button>
+    <div id="demo" class="mymenu">
+	    <h1>Rs Roki</h1>
+		<p>Roki is Professional Webdeveloper</p>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+	
+	document.querySelector('#openmenu').addEventListener("click",function(){
+	
+	document.querySelector('#demo').classList.toggle("showMenu");
+	
+	})
+	
+	</script>
+</body>
+</html>
