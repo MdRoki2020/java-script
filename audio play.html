@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+	
+	    <title>play audio </title>
+		<style>
+		
+		.btnStyle {
+        padding: 10px 38px;
+        background: #ff5200;
+        color: white;
+        }
+		
+		.btn3 {
+        width: 130px;
+        margin-bottom: 12px;
+        }
+
+        .btn2 {
+        width: 130px;
+        margin-bottom: 12px;
+        }
+
+        .btn1 {
+        width: 130px;
+        margin-bottom: 12px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: arial;
+        }
+		
+		</style>
+	
+	</head>
+	<body>
+	
+    
+	
+	    <div class="btn1"><button class="btnStyle">button1</button></div>
+	    <div class="btn2"><button class="btnStyle">button2</button></div>
+	    <div class="btn3"><button class="btnStyle">button3</button></div>
+	
+	
+	
+	<script>
+	
+	    for(var i=0;i<3;i++){
+		document.querySelectorAll(".btnStyle")[i].addEventListener("click",function(){
+	    var text=this.innerHTML;
+		console.log(text);
+		audioPlay(text);
+		});
+		
+		}
+		
+		function audioPlay(text){
+		switch(text){
+		case "button1":
+		var audio=new Audio("Astronomia.mp3");
+		audio.play();
+		break;
+		
+		case "button2":
+		var audio=new Audio("End of time.mp3");
+		audio.play();
+		break;
+		
+		case "button3":
+		var audio=new Audio("maro tan.mp3");
+		audio.play();
+		break;
+	
+		}
+		}
+	
+	</script>
+	</body>
+
+</html>
