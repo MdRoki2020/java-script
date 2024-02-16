@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD Operations</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <form action='' method='post' onsubmit="onFormSubmit()" autocomplete="off">
+                    <div>
+                        <lebel>Full Name: </lebel>
+                        <input type='text' name='fullName' id='fullName'/>
+                    </div>
+                    <div>
+                        <lebel>EMP code: </lebel>
+                        <input type='text' name='empCode' id='empCode'/>
+                    </div>
+                    <div>
+                        <lebel>Salary: </lebel>
+                        <input type='text' name='salary' id='salary'/>
+                    </div>
+                    <div>
+                        <lebel>City: </lebel>
+                        <input type='text' name='city' id='city'/>
+                    </div>
+                    <div class='form-action-buttons'>
+                        <input type='submit' value='submit'/>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class='list' id='employeeList'>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+<script src='script.js'></script>
+</body>
+</html>
